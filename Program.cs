@@ -10,9 +10,15 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
-            Card mycard = new Card("Hearts", "Two");
+            Deck myDeck = new Deck();
+            foreach (Card card in myDeck.Cards)
+            {
+                Console.WriteLine(card.Suit);
+            }
 
-            Console.WriteLine(mycard.Value);
+            //Card mycard = new Card("Hearts", "Two");
+
+            //Console.WriteLine(mycard.Value);
             Console.ReadKey();
         }
     }
