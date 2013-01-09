@@ -10,6 +10,10 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
+            Card mycard = new Card("Hearts", "Two");
+
+            Console.WriteLine(mycard.Value);
+            Console.ReadKey();
         }
     }
 }
